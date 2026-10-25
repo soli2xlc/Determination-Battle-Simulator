@@ -26,14 +26,18 @@ layout();
 // ---------- Entrada: Z confirmar, X cancelar, flechas (el juego no usa el ratón) ----------
 const held = new Set(), pressed = new Set();
 const MAP = {
-  ArrowUp: 'up',
   w: 'up',
   W: 'up',
-  ArrowDown: 'down',
-  ArrowLeft: 'left',
-  ArrowRight: 'right',
+  a: 'left',
+  A: 'left',
+  s: 'down',
+  S: 'down',
+  d: 'right',
+  D: 'right',
+
   Enter: 'confirm',
   Shift: 'cancel',
+
   z: 'confirm',
   Z: 'confirm',
   x: 'cancel',
